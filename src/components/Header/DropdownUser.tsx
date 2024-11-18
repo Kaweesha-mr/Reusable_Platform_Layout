@@ -17,10 +17,11 @@ const DropdownUser = () => {
             className="transition-transform"
             description="@tonyreichert"
             name="Tony Reichert"
+            
           />
         </DropdownTrigger>
         <DropdownMenu aria-label="User Actions" variant="flat">
-          <DropdownItem key="profile" className="h-14 gap-2">
+          <DropdownItem key="profile" className="h-14 gap-2 dark:">
             <p className="font-bold">Signed in as</p>
             <p className="font-bold">@tonyreichert</p>
           </DropdownItem>
