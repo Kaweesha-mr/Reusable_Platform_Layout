@@ -309,7 +309,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         }`}
       >
         {/* <!-- SIDEBAR HEADER --> */}
-        <div className="flex items-center justify-between gap-2 px-6  py-5.5 lg:py-6.5 xl:py-10">
+        <div className="flex items-center  justify-between gap-2 px-6  py-5.5 lg:py-6.5 xl:py-10">
           <Link href="/">
             <Image
               width={150}
@@ -352,8 +352,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         </div>
         {/* <!-- SIDEBAR HEADER --> */}
 
-        <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
-          {/* <!-- Sidebar Menu --> */}
+        <div className="no-scrollbar  flex flex-col overflow-y-auto duration-300 ease-linear">
+
           <nav className="mt-1 px-4 lg:px-6">
             {menuGroups.map((group, groupIndex) => (
               <div key={groupIndex}>
@@ -374,7 +374,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </div>
             ))}
           </nav>
-          {/* <!-- Sidebar Menu --> */}
+
         </div>
       </aside>
     </ClickOutside>
