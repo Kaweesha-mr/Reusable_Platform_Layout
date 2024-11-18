@@ -70,7 +70,7 @@ const Header = (props: {
             <h1 className="mb-0.5 text-3xl font-bold text-dark dark:text-white">
               Project Name
             </h1>
-            <p className="font-medium">lorem espasum</p>
+            <p className=" dark:text-white font-medium">lorem espasum</p>
           </div>
         </div>
 

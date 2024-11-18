@@ -14,7 +14,7 @@ interface SidebarProps {
 
 const menuGroups = [
   {
-    name: "MAIN MENU",
+    name:"",
     menuItems: [
       {
         icon: (
