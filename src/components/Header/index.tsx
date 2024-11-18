@@ -3,7 +3,6 @@ import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
 import DropdownUser from "./DropdownUser";
 import Image from "next/image";
-import SearchForm from "@/components/Header/SearchForm";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -68,10 +67,10 @@ const Header = (props: {
 
         <div className="hidden xl:block">
           <div>
-            <h1 className="mb-0.5 text-heading-5 font-bold text-dark dark:text-white">
-              Dashboard
+            <h1 className="mb-0.5 text-3xl font-bold text-dark dark:text-white">
+              Project Name
             </h1>
-            <p className="font-medium">Next.js Admin Dashboard Solution</p>
+            <p className="font-medium">lorem espasum</p>
           </div>
         </div>
 
