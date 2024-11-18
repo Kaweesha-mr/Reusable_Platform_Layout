@@ -13,7 +13,7 @@ const DarkModeSwitcher = () => {
         <Switch
       defaultSelected
       size="lg"
-      color="success"
+      color="default"
       startContent={<SunIcon />}
       endContent={<MoonIcon />}
       onClick={() => {
