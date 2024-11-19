@@ -2,6 +2,7 @@ import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownUser from "./DropdownUser";
 import Image from "next/image";
+import HeaderConfig from "./headerConfig";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -67,22 +68,19 @@ const Header = (props: {
         <div className="hidden xl:block">
           <div>
             <h1 className="mb-0.5 text-3xl font-bold text-gray-800 dark:text-gray-5">
-              Project Name
+              {HeaderConfig.Title}
             </h1>
-            <p className=" text-gray-6 dark:text-gray-6 font-medium">lorem espasum</p>
+            <p className=" text-gray-6 dark:text-gray-6 font-medium">{HeaderConfig.SubTitle}</p>
           </div>
         </div>
 
         <div className="flex items-center justify-normal gap-2 2xsm:gap-4 lg:w-full lg:justify-between xl:w-auto xl:justify-normal">
           <ul className="flex items-center gap-2 2xsm:gap-4">
 
-            {/* <!-- Dark Mode Toggle --> */}
-            <DarkModeSwitcher />
-            {/* <!-- Dark Mode Toggle --> */}
 
-                      {/* <!-- User Area --> */}
-          <DropdownUser />
-          {/* <!-- User Area --> */}
+            <DarkModeSwitcher />
+
+          <DropdownUser Data={HeaderConfig.User.Dropdown} />
 
 
           </ul>

@@ -1,6 +1,11 @@
+import { HeaderConfigTypes } from "@/types";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, User} from "@nextui-org/react";
 
-const DropdownUser = () => {
+interface DropdownUserProps {
+  Data: HeaderConfigTypes.DropdownItem[];
+}
+
+const DropdownUser: React.FC<DropdownUserProps> = ({ Data }) => {
 
   return (
 
@@ -14,32 +19,19 @@ const DropdownUser = () => {
               isBordered: true,
               src: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
             }}
-            className="transition-transform"
+            className="transition-transform dark:text-gray-5"
             description="@tonyreichert"
             name="Tony Reichert"
             
           />
         </DropdownTrigger>
         <DropdownMenu aria-label="User Actions" variant="flat">
-          <DropdownItem key="profile" className="h-14 gap-2 dark:">
-            <p className="font-bold">Signed in as</p>
-            <p className="font-bold">@tonyreichert</p>
-          </DropdownItem>
-          <DropdownItem key="settings">
-            My Settings
-          </DropdownItem>
-          <DropdownItem key="team_settings">Team Settings</DropdownItem>
-          <DropdownItem key="analytics">
-            Analytics
-          </DropdownItem>
-          <DropdownItem key="system">System</DropdownItem>
-          <DropdownItem key="configurations">Configurations</DropdownItem>
-          <DropdownItem key="help_and_feedback">
-            Help & Feedback
-          </DropdownItem>
-          <DropdownItem key="logout" color="danger">
-            Log Out
-          </DropdownItem>
+          
+        {Data.map((item, index) => (
+            <DropdownItem key={index} color={item.color || undefined} onClick={item.Action}>
+              {item.Title}
+            </DropdownItem>
+          ))}
         </DropdownMenu>
       </Dropdown>
     </div>
