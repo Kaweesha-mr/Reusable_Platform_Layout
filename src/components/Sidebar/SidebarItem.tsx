@@ -15,7 +15,11 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
         <Link
           href={item.route}
           onClick={handleClick}
-          className={`${pageName === item.label.toLowerCase() ? "bg-primary/[.07] text-primary dark:bg-white/10 dark:text-white" : "text-dark-4 hover:bg-gray-2 hover:text-dark dark:text-gray-5 dark:hover:bg-white/10 dark:hover:text-white"} group relative flex items-center gap-3 rounded-[7px] px-3.5 py-3 font-medium duration-300 ease-in-out`}
+          className={`${pageName === item.label.toLowerCase() ? "bg-blue-50 text-blue dark:bg-gray-800 dark:text-blue-400" : "text-gray-6 hover:bg-blue-100 hover:text-blue-600 dark:text-gray-5 dark:hover:bg-[#84a6ebc1] dark:hover:text-white"} group relative flex items-center gap-3 rounded-[7px] px-3.5 py-3 font-medium duration-300 ease-in-out`}
+
+
+
+
         >
           {item.icon}
           {item.label}
@@ -24,6 +28,7 @@ const SidebarItem = ({ item, pageName, setPageName }: any) => {
               {item.message}
             </span>
           )}
+
           {item.children && (
             <svg
               className={`absolute right-3.5 top-1/2 -translate-y-1/2 fill-current ${
