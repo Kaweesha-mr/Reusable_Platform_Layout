@@ -58,15 +58,6 @@ const headerConfig:HeaderConfigTypes.HeaderConfig = {
                 }
                 
             },{
-                Title: 'Help & Feedback',
-                Icon: '',
-                Description:'',
-                color: '',
-                Action: () => {
-                    // what need to happen when this item is clicked
-                }
-                
-            },{
                 Title: 'Log Out',
                 Icon: '',
                 Description:'',
