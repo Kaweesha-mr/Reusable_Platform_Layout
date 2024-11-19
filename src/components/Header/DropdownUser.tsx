@@ -28,7 +28,7 @@ const DropdownUser: React.FC<DropdownUserProps> = ({ Data }) => {
         <DropdownMenu aria-label="User Actions" variant="flat">
           
         {Data.map((item, index) => (
-            <DropdownItem key={index} color={item.color || undefined} onClick={item.Action}>
+            <DropdownItem className="dark:text-gray-5 " key={index} color={item.color || undefined} description={item.Description || undefined} startContent={item.Icon || undefined} onClick={item.Action}>
               {item.Title}
             </DropdownItem>
           ))}
