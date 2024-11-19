@@ -1,6 +1,5 @@
 import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
-import DropdownNotification from "./DropdownNotification";
 import DropdownUser from "./DropdownUser";
 import Image from "next/image";
 
@@ -9,7 +8,7 @@ const Header = (props: {
   setSidebarOpen: (arg0: boolean) => void;
 }) => {
   return (
-    <header className="sticky top-0 z-999 shadow-md flex w-full border-b border-stroke bg-white dark:border-stroke-dark dark:bg-gray-dark transition-colors duration-500 ease-in-out">
+    <header className="sticky top-0 z-999 shadow-md flex w-full border-b border-stroke bg-white dark:border-stroke-dark dark:bg-dark transition-colors duration-500 ease-in-out">
       <div className="flex flex-grow items-center justify-between px-4 py-5 shadow-2 md:px-5 2xl:px-10">
         <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -67,10 +66,10 @@ const Header = (props: {
 
         <div className="hidden xl:block">
           <div>
-            <h1 className="mb-0.5 text-3xl font-bold text-dark dark:text-white">
+            <h1 className="mb-0.5 text-3xl font-bold text-gray-800 dark:text-gray-5">
               Project Name
             </h1>
-            <p className=" dark:text-white font-medium">lorem espasum</p>
+            <p className=" text-gray-6 dark:text-gray-6 font-medium">lorem espasum</p>
           </div>
         </div>
 
