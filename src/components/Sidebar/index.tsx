@@ -302,7 +302,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
-className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden border-r border-gray-3 bg-blue-50 dark:border-dark-4 dark:bg-dark transition-colors duration-500 ease-in-out lg:static lg:translate-x-0 ${
+className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden border-r border-gray-3 bg-blue-100 dark:border-dark-4 dark:bg-dark transition-colors duration-500 ease-in-out lg:static lg:translate-x-0 ${
   sidebarOpen
     ? "translate-x-0 duration-300 ease-linear"
     : "-translate-x-full"
